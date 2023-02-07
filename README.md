@@ -1,7 +1,8 @@
 # Sydney St. Clair Grocery List Builder
 
 ### Problem Statement
-
+Writing grocery lists is so tedious and monotonous. We build our recipe book out but there is no great way to streamline 
+the process. My website aims to fix this by storing recipes so you can build a grocery list with just a few clicks.
 
 ### Project Technologies/Techniques
 * Security/Authentication
