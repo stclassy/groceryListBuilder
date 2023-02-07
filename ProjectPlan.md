@@ -2,13 +2,16 @@
 
 ### Week 3
 - [x] Add link to list of indie projects in student repo.
-- [ ] Complete Problem Statement
-- [ ] List technologies, versions and how they will be used
-- [ ] Write project plan
-- [ ] Record Time Log
+- [x] Start Problem Statement
+- [x] List technologies, versions and how they will be used
+- [x] Write project plan
+- [x] Record Time Log
 - [x] Write user stories
-- [ ] Start application flow
+- [x] Start application flow
 
 ### Week 4
 - [ ] Create screen designs
-- [ ] 
+- [ ] Finish app flow
+- [ ] Record Time Log
+- [ ] Complete Problem Statement
+- [ ] Update Project Plan
