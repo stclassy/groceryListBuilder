@@ -18,6 +18,7 @@
 - [ ] Create database for project
 - [ ] Create user table
 - [ ] Implement DAO for user table
+- [ ] welcome jsp
 - [ ] new user jsp
 - [ ] add user controller (java class)
 - [ ] unit test dao add user functionality
