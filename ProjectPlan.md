@@ -11,10 +11,10 @@
 
 ### Week 4
 - [ ] Create screen designs
-- [ ] Finish app flow
+- [x] Finish app flow
 - [ ] Record Time Log
-- [ ] Complete Problem Statement
-- [ ] Update Project Plan
+- [x] Complete Problem Statement
+- [x] Update Project Plan
 - [ ] Create database for project
 - [ ] Create user table
 - [ ] Implement DAO for user table
