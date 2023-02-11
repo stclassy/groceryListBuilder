@@ -176,4 +176,28 @@ public class User {
     public void setUpdateDate(LocalDateTime updateDate) {
         this.updateDate = updateDate;
     }
+
+    @Override
+    public String toString() {
+        if(updateDate == null) {
+            return "User{" +
+                    "userId=" + userId +
+                    ", firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", userName='" + userName + '\'' +
+                    ", password='" + password + '\'' +
+                    ", createDate=" + createDate +
+                    '}';
+        } else {
+            return "User{" +
+                    "userId=" + userId +
+                    ", firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", userName='" + userName + '\'' +
+                    ", password='" + password + '\'' +
+                    ", createDate=" + createDate +
+                    ", updateDate=" + updateDate +
+                    '}';
+        }
+    }
 }
