@@ -10,17 +10,17 @@
 - [x] Start application flow
 
 ### Week 4
-- [ ] Create screen designs
+- [x] Create screen designs
 - [x] Finish app flow
-- [ ] Record Time Log
+- [x] Record Time Log
 - [x] Complete Problem Statement
 - [x] Update Project Plan
-- [ ] Create database for project
-- [ ] Create user table
-- [ ] Implement DAO for user table
+- [x] Create database for project
+- [x] Create user table
+- [x] Implement DAO for user table
 - [ ] welcome jsp
 - [ ] new user jsp
-- [ ] add user controller (java class)
+- [x] add user controller (java class)
 - [ ] unit test dao add user functionality
 
 ### Week 5
