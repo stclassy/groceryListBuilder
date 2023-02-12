@@ -58,11 +58,24 @@ public class UserDao {
     public int insert(User user) {
         int id = 0;
         Session session = getSession();
-        Transaction transaction = session.getTransaction();
+        Transaction transaction = session.beginTransaction();
         id = (int)session.save(user);
         transaction.commit();
         session.close();
         return id;
+    }
+
+    /**
+     * Delete a user
+     *
+     * @param user User to be deleted
+     */
+    public void delete(User user) {
+        Session session = getSession();
+        Transaction transaction = session.beginTransaction();
+        session.delete(user);
+        transaction.commit();
+        session.close();
     }
 
     /**

@@ -1,6 +1,10 @@
-[ERROR] 2023-02-11 19:41:32.905 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[ERROR] 2023-02-11 19:41:32.924 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[ERROR] 2023-02-11 19:41:32.937 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[ERROR] 2023-02-11 19:41:32.954 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[ERROR] 2023-02-11 19:41:34.126 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
-[ERROR] 2023-02-11 19:41:42.590 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+[DEBUG] 2023-02-12 02:53:12.841 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-12 02:53:12.854 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-12 02:54:33.567 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-12 02:54:33.580 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-12 02:55:11.665 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-12 02:55:11.677 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-12 02:55:54.499 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-12 02:55:54.512 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-12 02:56:14.909 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-12 02:56:14.923 [main] UserDao - Searching for users with lastName = c
