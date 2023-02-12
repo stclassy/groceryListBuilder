@@ -1,6 +1,7 @@
 package com.groceryListBuilder.persistence;
 
 import com.groceryListBuilder.entity.User;
+import com.groceryListBuilder.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,10 +12,10 @@ class UserDaoTest {
     UserDao dao;
     @BeforeEach
     void setUp() {
-        com.groceryListBuilder.test.util.Database database = com.groceryListBuilder.test.util.Database.getInstance();
-        database.runSQL("cleandb.sql");
-
         dao = new UserDao();
+
+        Database database = Database.getInstance();
+        database.runSQL("cleandb.sql");
     }
 
     @Test

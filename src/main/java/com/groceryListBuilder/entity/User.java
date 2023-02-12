@@ -17,6 +17,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    @Column(name = "userId")
     private int userId;
 
     private String firstName;
@@ -24,7 +25,7 @@ public class User {
     private String userName;
     private String password;
     private LocalDateTime createDate;
-    private LocalDateTime updateDate;
+
 
     /**
      * Instantiates a new User.
@@ -159,27 +160,10 @@ public class User {
         this.createDate = createDate;
     }
 
-    /**
-     * Gets update date.
-     *
-     * @return the update date
-     */
-    public LocalDateTime getUpdateDate() {
-        return updateDate;
-    }
 
-    /**
-     * Sets update date.
-     *
-     * @param updateDate the update date
-     */
-    public void setUpdateDate(LocalDateTime updateDate) {
-        this.updateDate = updateDate;
-    }
 
     @Override
     public String toString() {
-        if(updateDate == null) {
             return "User{" +
                     "userId=" + userId +
                     ", firstName='" + firstName + '\'' +
@@ -188,16 +172,6 @@ public class User {
                     ", password='" + password + '\'' +
                     ", createDate=" + createDate +
                     '}';
-        } else {
-            return "User{" +
-                    "userId=" + userId +
-                    ", firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    ", userName='" + userName + '\'' +
-                    ", password='" + password + '\'' +
-                    ", createDate=" + createDate +
-                    ", updateDate=" + updateDate +
-                    '}';
-        }
+
     }
 }
