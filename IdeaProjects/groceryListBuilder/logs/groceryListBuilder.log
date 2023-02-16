@@ -1,0 +1,6 @@
+[DEBUG] 2023-02-15 20:34:13.771 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-15 20:34:13.787 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-16 17:07:25.423 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-16 17:07:25.435 [main] UserDao - Searching for users with lastName = c
+[DEBUG] 2023-02-16 17:09:02.092 [main] UserDao - List of users: [User{userId=1, firstName='Joe', lastName='Coyne', userName='joeshmoe', password='123', createDate=2023-02-10T12:36:47}, User{userId=2, firstName='Stacy', lastName='Heart', userName='hearty', password='lkj', createDate=2023-02-11T16:12:43}]
+[DEBUG] 2023-02-16 17:09:02.119 [main] UserDao - Searching for users with lastName = c

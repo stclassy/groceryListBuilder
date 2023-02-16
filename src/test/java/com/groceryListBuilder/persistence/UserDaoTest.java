@@ -5,7 +5,6 @@ import com.groceryListBuilder.test.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -49,10 +48,7 @@ class UserDaoTest {
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = dao.getById(id);
-        assertEquals("Henry",insertedUser.getFirstName());
-        assertEquals("Fright",insertedUser.getLastName());
-        assertEquals(LocalDateTime.parse("2023-02-12T02:40:33"),insertedUser.getCreateDate());
-        assertEquals("Knightly",insertedUser.getUserName());
+        assertEquals(newUser.toString(), insertedUser.toString());
     }
 
     @Test
