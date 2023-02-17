@@ -9,8 +9,5 @@
         <module name="groceryListBuilder" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="groceryListBuilder" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
