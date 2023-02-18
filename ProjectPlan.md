@@ -21,7 +21,7 @@
 - [ ] welcome jsp
 - [ ] new user jsp
 - [x] add user controller (java class)
-- [ ] unit test dao add user functionality
+- [x] unit test dao add user functionality
 
 ### Week 5
 - [ ] grocery list table
@@ -32,7 +32,7 @@
 - [ ] record time log
 
 ### Week 6
-- [ ] recipe table
+- [x] recipe table
 - [ ] recipe jsp
 - [ ] recipe DAO
 - [ ] recipe controller
