@@ -1,7 +1,8 @@
 package com.groceryListBuilder.controller;
 
 
-import com.groceryListBuilder.persistence.UserDao;
+import com.groceryListBuilder.entity.User;
+import com.groceryListBuilder.persistence.GenericDao;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,9 +17,9 @@ import java.io.IOException;
 public class UserSearch extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserDao dao = new UserDao();
+        GenericDao dao = new GenericDao(User.class);
         if(request.getParameter("submit").equals("search")) {
-            request.setAttribute("users", dao.getByPropertyLike("lastName", request.getParameter("searchTerm")));
+            request.setAttribute("users", dao.findByPropertyEqual("lastName", request.getParameter("searchTerm")));
         } else {
             request.setAttribute("users", dao.getAll());
         }

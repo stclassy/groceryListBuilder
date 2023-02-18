@@ -12,10 +12,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
-    UserDao dao;
+    GenericDao dao;
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
+        dao = new GenericDao(User.class);
 
         Database database = Database.getInstance();
         database.runSQL("cleandb.sql");
@@ -23,7 +23,7 @@ class UserDaoTest {
 
     @Test
     void getByIdSuccess() {
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User)dao.getById(1);
 
         assertEquals("Joe", retrievedUser.getFirstName());
         assertEquals("Coyne", retrievedUser.getLastName());
@@ -35,10 +35,10 @@ class UserDaoTest {
     @Test
     void saveOrUpdateSuccess() {
         String newUserName = "Joey";
-        User userToUpdate = dao.getById(1);
+        User userToUpdate = (User)dao.getById(1);
         userToUpdate.setUserName(newUserName);
         dao.saveOrUpdate(userToUpdate);
-        User retrievedUser = dao.getById(1);
+        User retrievedUser = (User)dao.getById(1);
         assertEquals(newUserName, retrievedUser.getUserName());
     }
 
@@ -47,7 +47,7 @@ class UserDaoTest {
         User newUser = new User(3, "Henry", "Fright", "Knightly", "super safe password", LocalDateTime.parse("2023-02-12T02:40:33"));
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)dao.getById(id);
         assertEquals(newUser.toString(), insertedUser.toString());
     }
 
@@ -65,7 +65,7 @@ class UserDaoTest {
 
     @Test
     void getByPropertyLikeSuccess() {
-        List<User> users = dao.getByPropertyLike("lastName", "c");
+        List<User> users = dao.findByPropertyEqual ("lastName", "Coyne");
         assertEquals(1, users.size());
     }
 }
