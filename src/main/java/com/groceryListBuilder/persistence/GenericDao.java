@@ -12,9 +12,11 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 /**
- * The type Generic dao.
+ * The  Generic dao.
  *
- * @param <T> the type parameter
+ * @param <T> the type being passed in(user, recipe, etc)
+ *
+ * @author Sydney St. Clair
  */
 public class GenericDao<T> {
     private Class<T> type;
