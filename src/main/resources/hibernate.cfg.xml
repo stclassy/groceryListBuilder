@@ -5,6 +5,7 @@
 <hibernate-configuration>
     <session-factory>
         <property name="connection.url">jdbc:mysql://localhost:3306/groceryListBuilder</property>
+        <!-- <property name="connection.url">jdbc:mysql://awseb-e-b2tb7vmpfp-stack-awsebrdsdatabase-mbbxikdwucsi.cvcyrwc8wjas.us-east-2.rds.amazonaws.com:3306/groceryListBuilder</property> -->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <property name="connection.username">stclassy</property>

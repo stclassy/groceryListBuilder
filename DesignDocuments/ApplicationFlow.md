@@ -43,18 +43,43 @@
 7. Dao adds recipe to the database
 8. Servlet sends confirmation to recipe page that recipe has been added
 
-### Add Grocery List
+### Create Grocery List
 1. Option only available to logged in users with proper role
 2. User selects create grocery list (available on all pages if user is logged in)
-3. Request is sent to Recipe dao to get all recipes
-4. Dao performs select and creates a list of recipes.
-5. Dao returns list to grocery list jsp
+3. Servlet creates a grocery list object and requests all of a users stored recipes
 6. Grocery list jsp displays recipes with button to add to shopping list
-7. Button sends recipe to grocery list servlet
-8. Grocery list servlet sends all items in recipe to grocery list dao
-9. Grocery list dao creates grocery list object
-10. Dao adds grocery list to the database (amounts for items with the same name will be additive)
-11. Servlet sends confirmation to grocery list page that recipe has been added to shopping list.
+10. Servlet adds grocery list to the database (amounts for items with the same name will be additive)
+11. Add recipe button adds all items to grocery list
+12. Servlet sends confirmation to grocery list page that recipe has been added to shopping list.
 12. Grocery list is updated to show items added
+
+### Edit Recipe
+1. Logged in user selects edit button on recipe jsp
+3. Servlet requests recipe object by id/name
+4. Servlet redirects to edit recipe jsp
+5. Edit recipe jsp displays stored info in form fields
+6. User makes edits and clicks on complete
+7. Servlet sends info to be updated and shows confirmation on screen
+
+### Edit Grocery List
+1. Logged in user selects edit grocery list
+2. Servlet requests grocery list object
+3. Grocery List jsp lists all items stored in form fields
+4. User makes edits to fields and selects complete
+5. Servlet updates grocery list object
+6. Servlet shows confirmation list was changed
+
+### Delete Recipe
+1. Logged in user viewing recipes clicks on remove button
+2. Servlet asks for confirmation of delete
+3. Servlet executes recipe delete
+4. Shows confirmation recipe was removed
+
+
+### Delete Grocery List
+1. Logged in user viewing grocery lists clicks on remove button
+2. Servlet asks for confirmation of delete
+3. Servlet executes grocery list delete
+4. Shows confirmation grocery list was removed
 
 
