@@ -16,7 +16,6 @@
         <thead>
         <th>Name</th>
         <th>User Name</th>
-        <th>Age</th>
         </thead>
         <tbody>
         <c:forEach var="user" items="${users}">
