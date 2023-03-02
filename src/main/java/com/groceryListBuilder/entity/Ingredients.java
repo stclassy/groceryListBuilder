@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 /**
  * The type Ingredient.
+ *
+ * @author Sydney St Clair
  */
 @Entity(name = "Ingredients")
 @Table(name = "ingredients")

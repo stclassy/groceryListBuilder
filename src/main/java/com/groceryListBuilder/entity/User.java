@@ -23,7 +23,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String userName;
-    private String password;
+    private LocalDateTime updateDate;
     private LocalDateTime createDate;
 
 
@@ -40,15 +40,13 @@ public class User {
      * @param firstName  the first name
      * @param lastName   the last name
      * @param userName   the user name
-     * @param password   the password
      * @param createDate the create date
      */
-    public User(int userId, String firstName, String lastName, String userName, String password, LocalDateTime createDate) {
+    public User(int userId, String firstName, String lastName, String userName, LocalDateTime createDate) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
-        this.password = password;
         this.createDate = createDate;
     }
 
@@ -125,21 +123,21 @@ public class User {
     }
 
     /**
-     * Gets password.
+     * Gets update date.
      *
-     * @return the password
+     * @return the update date
      */
-    public String getPassword() {
-        return password;
+    public LocalDateTime getUpdateDate() {
+        return updateDate;
     }
 
     /**
-     * Sets password.
+     * Sets update date.
      *
-     * @param password the password
+     * @param updateDate the update date
      */
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUpdateDate(LocalDateTime updateDate) {
+        this.updateDate = updateDate;
     }
 
     /**
@@ -169,7 +167,7 @@ public class User {
                     ", firstName='" + firstName + '\'' +
                     ", lastName='" + lastName + '\'' +
                     ", userName='" + userName + '\'' +
-                    ", password='" + password + '\'' +
+                    ", updateDate='" + updateDate + '\'' +
                     ", createDate=" + createDate +
                     '}';
 

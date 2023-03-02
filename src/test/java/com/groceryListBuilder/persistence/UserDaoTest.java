@@ -44,7 +44,7 @@ class UserDaoTest {
 
     @Test
     void insertSuccess() {
-        User newUser = new User(3, "Henry", "Fright", "Knightly", "super safe password", LocalDateTime.parse("2023-02-12T02:40:33"));
+        User newUser = new User(3, "Henry", "Fright", "Knightly", LocalDateTime.parse("2023-02-12T02:40:33"));
         int id = dao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)dao.getById(id);
