@@ -31,7 +31,7 @@ the process. My website aims to fix this by storing recipes so you can build a g
 * [Tasks]()
 * [Screen Design](DesignDocuments/screens.md)
 * [Application Flow](DesignDocuments/ApplicationFlow.md)
-* [Database Design]()
+* [Database Design](DesignDocuments/databaseDesign.md)
 
 ### [Project Plan](ProjectPlan.md)
 
