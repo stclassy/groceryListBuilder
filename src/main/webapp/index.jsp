@@ -1,16 +1,9 @@
-<%@include file="head.jsp"%>
+<%@include file="taglib.jsp"%>
+<c:set var="title" value="Welcome" />
+<c:import url="head.jsp" />
+<c:import url="nav.jsp" />
 <html>
 <body>
-
-<h2>Grocery List Builder</h2>
-<form action="searchUser" class="form-inline">
-    <div class="form-group">
-        <label for="searchTerm">Search</label>
-        <input type="text" class="form-control" id="searchTerm" name="searchTerm" aria-describedby="searchTermHelp"/>
-    </div>
-    <button type="submit" name="submit" value="search" class="btn btn-primary">Search</button>
-    <button type="submit" name="submit" value="viewAll" class="btn btn-primary">View all users</button>
-
-</form>
+    <h2>Welcome, Please <a href="/logIn">sign in</a> or <a href="signUp.jsp">sign up</a> to continue.</h2>
 </body>
 </html>
